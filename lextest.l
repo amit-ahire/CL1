@@ -23,6 +23,7 @@ print {return 0;}
 		count+=yyleng; 
 		replace(yytext,yyleng);
 	}
+[a-zA-Z]* {word++;count+=yyleng;}
 
 %%
 
