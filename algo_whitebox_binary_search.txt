@@ -1,0 +1,17 @@
+1.int rec_Search(int first,int last,int search_key){
+2.	int middle = (first+last)/2;
+3. 	if(array[middle]==search_key)
+4. 		return middle;
+5. 	else{
+6. 		if(first>last)
+7. 		return 0;
+8. 		else{
+9. 			if(array[middle]>search_key)
+10. 				rec_search(first,middle-1,search_key);
+11.				if(array[middle] < search && search <= array[last])
+12. 					rec_search(middle+1,last,search_key);
+13. 				else 
+14.					return -1;
+15. 		}
+16. 	}
+17.}
